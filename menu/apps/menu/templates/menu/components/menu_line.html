@@ -1,0 +1,14 @@
+
+
+<div>
+    <a href="{{ menu.link }}">{{ menu.name }}</a>
+
+    <br/>
+
+    <br/>
+    {% for i in menu.childs %}
+        <div style="margin-left: 30px">
+            {% include 'menu/components/menu_line.html' with menu=i %}
+        </div>
+    {% endfor %}
+</div>

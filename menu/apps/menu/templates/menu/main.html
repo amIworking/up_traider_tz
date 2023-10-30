@@ -6,9 +6,9 @@
 </head>
 <body>
 
-{{ target_code }}
-
-{{ menu }}
+{% for i in menu %}
+    {% include 'menu/components/menu_line.html' with menu=i %}
+{% endfor %}
 
 </body>
 </html>
